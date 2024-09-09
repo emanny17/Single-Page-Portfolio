@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    ---HEADER AND NAV---- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about-2">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ----ABOUT-SECTION---- -->
+    <section id="about" class="about">
+      <div class="about-container">
+        <img src="./Images/WhatsApp Image 2024-09-06 at 14.12.28.jpeg" alt="" />
+        <div class="info-box">
+          <div class="text">
+            <h3>Hi, I'm</h3>
+            <h1>Emmanuel Nwosu</h1>
+            <span>Web developer</span>
+          </div>
+          <div class="btn-group">
+            <div class="btn">
+              <a href="./Images/myCV.pdf" download>Download CV</a>
+            </div>
+            <div class="btn">
+              <a href="mailto:emmanuelnwosu109@gmail.com" download>Contact</a>
+            </div>
+          </div>
+
+          <div class="socials">
+            <a href="https://github.com/emanny17?tab=repositories"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/emmanuel-nwosu-a3a21a217/">
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----ABOUT ME -2---- -->
+    <div id="about-2">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="./Images/WhatsApp Image 2023-07-07 at 11.50.1522.jpg"
+              alt=""
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About <span>me</span></h1>
+            <p>
+              An electrical and electronics engineering graduate with
+              Information Technology (IT), Web development and Computer
+              engineering knowledge. Effective and comfortable in varied
+              teamwork environments. Dedicated to improving and learning new
+              things. I am a team player, eager to learn, and passionate about
+              technology and innovation.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>IT Services</span><br />
+                  Troubleshooting and fixing hardware/softwares
+                </li>
+                <li>
+                  <span>Web development</span><br />
+                  Building Web application
+                </li>
+                <li>
+                  <span>App development</span><br />
+                  Building Android/iOS application
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>October 2018 - December 2018</span><br />
+                  I interned as a software dev where i learnt how to build
+                  responsive and dynamic websites
+                </li>
+                <li>
+                  <span>April 2021 - September 2021 </span><br />
+                  Worked as an IT support to optimize and monitor customer's
+                  network
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016-2022</span><br />
+                  Federal University of Technology, Owerri
+                </li>
+                <li>
+                  <span>2010-2016</span><br />
+                  Kings College, Lagos
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------MY PROJECTS----- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title"><span>My </span> Projects</h1>
+        <div class="work-list">
+          <div class="work work-1">
+            <img src="./Images/dice3.webp" alt="" />
+            <div class="layer">
+              <h3>DICE GAME</h3>
+              <p>
+                The game consists of 2 players rolling a dice in rounds governed
+                by some set of rules. The first player to reach a specified
+                points wins the game.
+              </p>
+              <a href="https://github.com/emanny17/DICE-GAME"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="./Images/pngtree-to-do-list-icon-cartoon-style-png-image_5080528.jpg"
+              alt=""
+            />
+            <div class="layer">
+              <h3>TODO-LIST APP</h3>
+              <p>
+                An app that lets you create a list of tasks to be completed. The
+                user can edit, delete and tick off tasks after completion of
+                each task.
+              </p>
+              <a href="https://github.com/emanny17/TODO-LIST-APP"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+ ---CONTACT---- -->
+    <section class="contact" id="contact">
+      <div class="center-text sub-title">
+        <h2>Contact<span>Me</span></h2>
+      </div>
+
+      <div class="contact-form">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your name" required />
+          <input
+            type="email"
+            name="Email"
+            placeholder="Email Address..."
+            required
+          />
+          <textarea
+            id=""
+            cols="30"
+            rows="10"
+            type="text"
+            placeholder="Write Message Here...."
+            name="Message"
+            required
+          ></textarea>
+          <input type="submit" name="" value="Send Message" class="send-btn" />
+        </form>
+      </div>
+      <span id="msg"></span>
+    </section>
+  </body>
+
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwvU2rmOXLjsrDHVJgpGtWJLujmdKMLQKoBkMvs3Prh-S-YbWekYdsI-2C0C2LI5scP/exec";
+    const form = document.forms["submit-to-google-sheet"];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let msg = document.getElementById("msg");
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message sent Suceesfully";
+          setTimeout(() => {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+</html>
